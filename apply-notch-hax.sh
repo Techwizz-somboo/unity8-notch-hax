@@ -7,7 +7,7 @@ if [ $UID -eq 0 ]; then
 fi
 
 WORK="$HOME/.cache/unity8-notch-hax"
-DEVICE="$1"
+DEVICE="$guacamole"
 
 if [ -z "$DEVICE" ]; then
 	echo ">> No device specified, detecting device name..."
@@ -28,7 +28,7 @@ echo ">> Using diff '$DIFF'"
 if [ ! -e $DIFF ]; then
 	mkdir -p $WORK
 	echo ">> Fetching patches for $DEVICE..."
-	if ! wget -O $DIFF https://raw.githubusercontent.com/JamiKettunen/unity8-notch-hax/main/patches/$DEVICE.diff; then
+	if ! wget -O $DIFF https://raw.githubusercontent.com/Techwizz-Somboo/unity8-notch-hax/main/patches/$DEVICE.diff; then
 		echo "ERROR: It seems your device isn't supported by this project;
        please tune the files on your device manually first,
        then fork the repo, create a patches/$DEVICE.diff
