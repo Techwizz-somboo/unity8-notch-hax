@@ -7,7 +7,7 @@ if [ $UID -eq 0 ]; then
 fi
 
 WORK="$HOME/.cache/unity8-notch-hax"
-DEVICE="$guacamole"
+DEVICE="$1"
 
 if [ -z "$DEVICE" ]; then
 	echo ">> No device specified, detecting device name..."
