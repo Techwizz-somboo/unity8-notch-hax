@@ -4,6 +4,7 @@ Lomiri (formely Unity 8) patches for improved display notch and rounded corners 
 ## Supported devices
 * Volla Phone
 * OnePlus 6/6T
+* OnePlus 7 Pro
 * Xiaomi Poco F1
 * Xiaomi Redmi Note 7
 
